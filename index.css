@@ -32,23 +32,35 @@ body{
     position: relative;
 }
 
-.navbar a{
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-block;
-    margin-left: 4rem;
-    font-size: 16px;
-    transition: .5s;
-    position: relative;
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.navbar a:hover{
-    color: #3BD8FF;
+.navbar li {
+  float: left;
 }
 
-.navbar a:hover{
-    color: #3BD8FF;
+.navbar li a {
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .5s;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navbar li a:hover:not(.active) {
+  color: #0ff;
+}
+
+.active {
+  background-color: rgba(0, 255, 255, 0.5);
+  border-radius: 30px;
+  transition: 5s;
 }
 
 .home{
@@ -101,6 +113,72 @@ body{
     width: 345px;
 }
 
+.big-landing_page-text h1{
+  font-size: clamp(90px, 10vw, 200px); /*The clamp() CSS function clamps a middle value within a range of values between a defined minimum bound and a maximum bound.*/
+  letter-spacing: 2px;
+  position: relative;
+  text-align: center;
+  animation: 2s big_text ease-out;
+}
+
+@keyframes big_text {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.big-landing_page-text p:nth-child(2){
+  font-size: 50px;
+  position: absolute;
+  color: rgba(0, 255, 255, 0.3);
+  top: 0%;
+  transform: rotate(-30deg);
+}
+
+.big-landing_page-text p:nth-child(3){
+  font-size: 120px;
+  position: absolute;
+  color: rgba(0, 255, 255, 0.4);
+  bottom: -25%;
+  transform: rotate(30deg);
+}
+
+.big-landing_page-text p:nth-child(4){
+  font-size: 120px;
+  position: absolute;
+  color: rgba(0, 255, 255, 0.7);
+  top: -5%;
+  right: 10%;
+  transform: rotate(-30deg);
+}
+
+.big-landing_page-text p:nth-child(5){
+  font-size: 70px;
+  position: absolute;
+  color: rgba(0, 255, 255, 0.2);  
+  bottom: -15%;
+  right: 10%;
+  transform: rotate(30deg);
+}
+
+.landing_page_buttons{
+  margin-top: 7%;
+  justify-content: center;
+}
+
+.landing_page_list li{
+  margin: 30px 20px;
+}
+
 .btn-box a{
     position: relative;
     display: inline-flex;
@@ -144,7 +222,7 @@ body{
   .image-logo{
     position: absolute;
     display: flex;
-    height: 680px;
+    height: 650px;
     right: 0;
     top: 4%;
     padding: 50px 10% 0;
@@ -223,7 +301,7 @@ body{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 8% 0;
+    padding: 20px 8% 0;
 }
 
 .box {
@@ -322,14 +400,7 @@ h4 {
   }
 }
 
-.soft-skills h3{
-    font-size: 23px;
-    color: #3BD8FF;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
-
-.hard-skills h3{
+.row h3{
     font-size: 23px;
     color: #3BD8FF;
     font-weight: 800;
@@ -353,7 +424,7 @@ h4 {
 .home-skills{
     justify-content: space-between;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 30px 9.5% 0;
 }
 
 .column{
@@ -419,6 +490,40 @@ h4 {
     font-size: 25px;
     font-family: 'Dancing Script';
   }
+
+  /*https://dev.to/felixdusengimana/lets-create-an-faq-section-with-html-and-css-only-detail-tag-explained-12gf*/
+  details{
+    color: #3BD8FF;
+    margin-bottom: 20px;
+  }
+  
+  summary {
+    font-weight: bold;
+    padding: .5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #3BD8FF;
+  }
+  
+  summary:after{
+    content: "\002B";
+  }
+  
+  details[open] summary {
+      margin-bottom: .5em;
+      border-bottom: 2px solid #3BD8FF;
+  }
+  
+  details[open] summary:after{
+    content: "\00D7";
+  }
+  
+  details[open] div{
+    padding: .5em 1em;
+    color: white;
+  }
+  
 
   .footer{
     position: relative;
