@@ -58,7 +58,7 @@ body{
 }
 
 .active {
-  background-color: rgba(0, 255, 255, 0.5);
+  background-color: #3BD8FF;
   border-radius: 30px;
 }
 
@@ -242,8 +242,15 @@ body{
     }
   }
 
+  .hz_logo{
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    bottom: 55%;
+  }
+
   /*https://codepen.io/rpandrews/pen/ZEGGZXq*/
-  .cta-background {
+  .blurry-background {
     background-size: cover;
     background-position: center center;
     bottom: 0;
@@ -256,7 +263,7 @@ body{
     z-index: -1;
  }
  
- .container {
+ .container_card_beginning {
     align-items: center;
     display: flex;
     height: 100vh;
@@ -590,6 +597,57 @@ h4 {
     color: white;
   }
   
+  .blog_post {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: top;
+    padding: 20px 8% 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .article_card {
+    background: #3BD8FF;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 2rem 2rem 2rem 2rem;
+    flex-basis: content;
+    margin: 0 0px 15px;
+    overflow: hidden;
+    border-radius: 28px;
+  }
+
+  .article_card h3{
+    color:#081b29;
+  }
+  
+  .blogcard_description {
+    margin: 0 0 4rem 0;
+    max-height: 150px;
+  }
+
+  .blogcard_date{
+    font-size: 13px;
+    padding-bottom: 20px;
+  }
+  
+  .btn_blog {
+    align-items: center;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #10334C, #041e30);
+    padding: 1.5rem 2rem;
+    border-radius: 50px;
+    color:white;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+  }
+  
+  .btn_blog:hover {
+    color:#3BD8FF;
+    background: white;
+  }
 
   .footer{
     position: relative;
@@ -598,8 +656,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     padding: 70px 10% 0; 
-}
-
+  }
 
 .social-media{
     position: absolute;
