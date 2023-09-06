@@ -60,7 +60,6 @@ body{
 .active {
   background-color: rgba(0, 255, 255, 0.5);
   border-radius: 30px;
-  transition: 5s;
 }
 
 .home{
@@ -507,11 +506,6 @@ h4 {
   
   summary:after{
     content: "\002B";
-  }
-  
-  details[open] summary {
-      margin-bottom: .5em;
-      border-bottom: 2px solid #3BD8FF;
   }
   
   details[open] summary:after{
