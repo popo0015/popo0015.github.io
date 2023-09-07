@@ -1,41 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Silvia Popova - Dashboard</title>
 
-    <link rel="stylesheet" href="style.css">
-    <!--connect the html document with Boxicons website-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--https://www.bing.com/videos/search?q=portfolio+landing+page+htmland+css+tutorial&&view=detail&mid=B1CE37E79395CD91331EB1CE37E79395CD91331E&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dportfolio%2Blanding%2Bpage%2Bhtmland%2Bcss%2Btutorial%26FORM%3DHDRSC4-->
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-          <a href="index.html">Silvia</a>
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="dashboard.html" class="active">Dashboard</a></li>
-          <li><a href="profile.html #portfolio">Portfolio</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <br><br><br><br><br><br>
-    <section class="footer">
-        <div class="social-media">
-            <a href="https://www.facebook.com/profile.php?id=100004916047376" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/silviapopova.artspage/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
-        </div>
-        <img src="PHOTOS/hz_logo.png" class="hz_logo">
-    </section>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Silvia Popova - Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!--connect the html document with Boxicons website-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--https://www.bing.com/videos/search?q=portfolio+landing+page+htmland+css+tutorial&&view=detail&mid=B1CE37E79395CD91331EB1CE37E79395CD91331E&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dportfolio%2Blanding%2Bpage%2Bhtmland%2Bcss%2Btutorial%26FORM%3DHDRSC4-->
+</head>
+
+<body>
+  <!--back image-->
+  <img src="PHOTOS/blurry_back.jpg" alt="" class="blurry-background">
+  
+  <!--main navigation bar-->
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">Silvia</a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="profile.html #portfolio">Portfolio</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!--side navigation - aside-->
+    <div id="mySidenav" class="sidenav"><br>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a target="_blank"
+        href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20230720.pdf">
+        HZ HBO-ICT Course and Exam Regultaions</a>
+      <a target="_blank"
+        href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">
+        The implementation Regulations</a>
+      <a target="_blank" href="https://learn.hz.nl/my/">Learn environment</a>
+      <a target="_blank"
+        href="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel">
+        MS Teams</a>
+      <a target="_blank" href="#">MyHZ progress</a>
+      <a target="_blank" href="https://github.com/HZ-HBO-ICT">GutHub</a>
+    </div>
+    <span style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;
+    </span>
+  </header>
+
+  <section class="home-skills">
+    <div class="home-detail">
+      <table class="dash_table">
+        <thead>
+          <tr>
+            <th>Quartile 1 - Intro. to Computer Science</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="head-row">
+            <td>Course</td>
+            <td>Course number</td>
+            <td>Exam</td>
+            <td>EC</td>
+            <td>Grade</td>
+          </tr>
+          <tr>
+            <td>PCO - Program & Career Orientation</td>
+            <td>CU75001V3</td>
+            <td>Exam</td>
+            <td>2,5</td>
+            <td>
+              <label class="check-box">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Computer Science Basics</td>
+            <td>Course number</td>
+            <td>Exam</td>
+            <td>5</td>
+            <td>
+              <label class="check-box">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Programming basics</td>
+            <td>Course number</td>
+            <td>Exam</td>
+            <td>5</td>
+            <td>
+              <label class="check-box">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dash_table">
+        <thead>
+          <tr>
+            <th>Quartile 2 - Game Development</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="head-row">
+            <td>Course</td>
+            <td>Course number</td>
+            <td>Exam</td>
+            <td>EC</td>
+            <td>Grade</td>
+          </tr>
+          <tr>
+            <td>Object Oriented Programming</td>
+            <td>Course number</td>
+            <td>Exam</td>
+            <td>10</td>
+            <td>
+              <label class="check-box">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dash_table">
+        <thead>
+          <tr>
+            <th>Quartile 3 - Modern Software Dev. I</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="head-row">
+            <td>Course</td>
+            <td>Course number</td>
+            <td>Exam</td>
+            <td>EC</td>
+            <td>Grade</td>
+          </tr>
+          <tr>
+            <td>Framework Project 1</td>
+            <td>Course number</td>
+            <td>Exam</td>
+            <td>10</td>
+            <td>
+              <label class="check-box">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dash_table">
+        <thead>
+          <tr>
+            <th>Quartile 4 - Modern Software Dev. II</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="head-row">
+            <td>Course</td>
+            <td>Course number</td>
+            <td>Exam</td>
+            <td>EC</td>
+            <td>Grade</td>
+          </tr>
+          <tr>
+            <td>Framework Project 2</td>
+            <td>Course number</td>
+            <td>Exam</td>
+            <td>10</td>
+            <td>
+              <label class="check-box">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      <table class="dash_table">
+        <thead>
+          <tr>
+            <th>1st Year HBO-ICT Overview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="head-row">
+            <td>Courses taken</td>
+            <td>Exams taken</td>
+            <td>EC taken</td>
+            <td>Grade</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>8</td>
+            <td>60</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <br><br><br><br><br><br>
+  <section class="footer">
+    <div class="social-media">
+      <a href="https://www.facebook.com/profile.php?id=100004916047376" target="_blank" rel="noopener noreferrer"><i
+          class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com/silviapopova.artspage/" target="_blank" rel="noopener noreferrer"><i
+          class='bx bxl-instagram'></i></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+    </div>
+    <img src="PHOTOS/hz_logo.png" class="hz_logo">
+  </section>
+</body>
+
 </html>

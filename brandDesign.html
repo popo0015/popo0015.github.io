@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,31 +11,55 @@
     <!--connect the html document with Boxicons website-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--https://www.bing.com/videos/search?q=portfolio+landing+page+htmland+css+tutorial&&view=detail&mid=B1CE37E79395CD91331EB1CE37E79395CD91331E&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dportfolio%2Blanding%2Bpage%2Bhtmland%2Bcss%2Btutorial%26FORM%3DHDRSC4-->
-  </head>
-  <body>
+</head>
+
+<body>
+    <!--back image-->
+    <img src="PHOTOS/blurry_back.jpg" alt="" class="blurry-background">
+
+    <!--main navigation bar-->
     <header class="header">
         <div class="logo">
             <a href="index.html">Silvia</a>
         </div>
         <nav class="navbar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="profile.html #portfolio" class="active">Portfolio</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="blog.html">Blog</a></li>
-          </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html #portfolio" class="active">Portfolio</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
         </nav>
-      </header>
+
+        <!--side navigation - aside-->
+        <div id="mySidenav" class="sidenav"><br>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a target="_blank"
+                href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20230720.pdf">
+                HZ HBO-ICT Course and Exam Regultaions</a>
+            <a target="_blank"
+                href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">
+                The implementation Regulations</a>
+            <a target="_blank" href="https://learn.hz.nl/my/">Learn environment</a>
+            <a target="_blank"
+                href="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel">
+                MS Teams</a>
+            <a target="_blank" href="#">MyHZ progress</a>
+            <a target="_blank" href="https://github.com/HZ-HBO-ICT">GutHub</a>
+        </div>
+        <span style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;
+        </span>
+    </header>
 
     <section class="home">
         <div class="home-detail">
             <h3>Silvia Popova</h3>
             <h3>Brand Design</h3>
-                <p>All of the projects are created for experience purposes.
-                    They have been done on freelance projects or contests online.
-                </p>
+            <p>All of the projects are created for experience purposes.
+                They have been done on freelance projects or contests online.
+            </p>
         </div>
     </section> <br>
 
@@ -97,11 +122,14 @@
 
     <section class="footer">
         <div class="social-media">
-            <a href="https://www.facebook.com/profile.php?id=100004916047376" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/silviapopova.artspage/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100004916047376" target="_blank"
+                rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/silviapopova.artspage/" target="_blank" rel="noopener noreferrer"><i
+                    class='bx bxl-instagram'></i></a>
             <a href="#" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
         </div>
         <img src="PHOTOS/hz_logo.png" class="hz_logo">
     </section>
-  </body>
+</body>
+
 </html>
