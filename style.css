@@ -589,8 +589,7 @@ details[open] div {
   margin: 25px 0;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
   text-align: center;
-  overflow-x: scroll;
-  width: 700px;
+  width: 650px;
 }
 
 .dash_table thead tr {
@@ -677,6 +676,25 @@ details[open] div {
   background-color: #fff;
 }
 
+.table-extra-subjects {
+  position: absolute;
+  z-index: 1;
+  top: 17%;
+  right: 0;
+}
+
+.dash_table-right{
+  width: 100px;
+}
+
+@media (max-width: 1400px){
+  .table-extra-subjects{
+    font-size: 10px;
+    position:relative;
+    
+  }
+}
+
 .blog_post {
   position: relative;
   width: 100%;
@@ -690,7 +708,6 @@ details[open] div {
 .article_card {
   background: #3BD8FF;
   max-width: 300px;
-  border-radius: 10px;
   padding: 2rem 2rem 2rem 2rem;
   flex-basis: content;
   margin: 0 0px 15px;
