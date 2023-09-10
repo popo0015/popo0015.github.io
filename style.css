@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Dancing Script');
 
+/*main*/
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,13 @@
 
 body {
   background: #081b29;
-  color: #ededed;
+  color: var(--white);
+}
+
+:root {
+  --light_blue: #3BD8FF;
+  --dark_blue: #081b29;
+  --white: #ffffff;
 }
 
 .blurry-background {
@@ -26,9 +33,10 @@ body {
   top: 0;
   width: 100%;
   z-index: -2;
-  max-height:80vw;
+  max-height: 100vh;
 }
 
+/*HEADER - navigations*/
 .header {
   width: 100%;
   padding: 2rem 10%;
@@ -40,7 +48,7 @@ body {
 .logo a {
   font-family: 'Dancing Script';
   font-size: 30px;
-  color: #3BD8FF;
+  color: var(--light_blue);
   text-decoration: none;
   font-weight: 700;
   cursor: pointer;
@@ -59,7 +67,7 @@ body {
 }
 
 .navbar li a {
-  color: #ededed;
+  color: var(--white);
   text-decoration: none;
   font-weight: 500;
   transition: .5s;
@@ -69,11 +77,11 @@ body {
 }
 
 .navbar li a:hover:not(.active) {
-  color: #0ff;
+  color: var(--light_blue);
 }
 
 .active {
-  background-color: #3BD8FF;
+  background-color: var(--light_blue);
   border-radius: 30px;
 }
 
@@ -84,7 +92,7 @@ body {
   z-index: 2;
   top: 0;
   right: 0;
-  background-color: #3BD8FF;
+  background-color: var(--light_blue);
   overflow-x: hidden;
   transition: 1s;
   padding-top: 60px;
@@ -93,7 +101,7 @@ body {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   display: block;
   transition: 0.3s;
 }
@@ -105,10 +113,16 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
+/*HOME page*/
 .home {
   position: relative;
   width: 100%;
@@ -137,10 +151,19 @@ body {
   position: relative;
 }
 
+.home-detail h5 {
+  color: var(--white);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
 /*that is for the second "child" of h3 in home-detail - basically the second h3*/
 .home-detail h3:nth-child(2) {
   font-size: 23px;
-  color: #3BD8FF;
+  color: var(--light_blue);
   font-weight: 800;
   margin-bottom: 30px;
 }
@@ -159,9 +182,39 @@ body {
   width: 345px;
 }
 
+.image-logo {
+  position: absolute;
+  display: flex;
+  height: 650px;
+  right: 0;
+  top: 4%;
+  padding: 50px 10% 0;
+}
+
+@media (max-width: 1300px) {
+  .image-logo {
+    position: relative;
+  }
+}
+
+/* Styles for smaller screens in portrait mode */
+@media (max-width: 600px) and (orientation: portrait) {
+  .image-logo {
+    position: relative;
+    height: 570px;
+    padding: 50px 0% 0;
+  }
+}
+
+#home-motivation {
+  margin-top: 4%;
+  padding-bottom: 4%;
+}
+
 .big-landing_page-text h1 {
   font-size: clamp(90px, 10vw, 200px);
-  /*The clamp() CSS function clamps a middle value within a range of values between a defined minimum bound and a maximum bound.*/
+  /*The clamp() CSS function clamps a middle value within a range of 
+  values between a defined minimum bound and a maximum bound.*/
   letter-spacing: 2px;
   position: relative;
   text-align: center;
@@ -185,7 +238,7 @@ body {
   }
 }
 
-.big-landing_page-text p{
+.big-landing_page-text p {
   animation-name: spin;
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
@@ -228,8 +281,13 @@ body {
 
 /*Spining animation - https://stackoverflow.com/questions/14859322/css3-spin-animation*/
 @keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .landing_page_buttons {
@@ -247,9 +305,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 150px;
-  color: #081b29;
-  background: #3BD8FF;
-  border: 2px solid #3BD8FF;
+  color: var(--dark_blue);
+  background: var(--light_blue);
+  border: 2px solid var(--light_blue);
   height: 100%;
   width: 150px;
   text-decoration: none;
@@ -260,19 +318,19 @@ body {
 }
 
 .btn-box a:hover {
-  color: #3BD8FF;
-  background: #081b29;
+  color: var(--light_blue);
+  background: var(--dark_blue);
   transition: 0.5s;
 }
 
 .btn-box a:nth-child(2) {
   background: transparent;
-  color: #3BD8FF;
+  color: var(--light_blue);
 }
 
 .btn-box a:nth-child(2):hover {
-  color: #081b29;
-  background: #3BD8FF;
+  color: var(--dark_blue);
+  background: var(--light_blue);
 }
 
 @media (max-width: 600px) and (orientation: portrait) {
@@ -281,28 +339,11 @@ body {
   }
 }
 
-.image-logo {
-  position: absolute;
-  display: flex;
-  height: 650px;
-  right: 0;
-  top: 4%;
-  padding: 50px 10% 0;
-}
-
-@media (max-width: 1300px) {
-  .image-logo {
-    position: relative;
-  }
-}
-
-/* Styles for smaller screens in portrait mode */
-@media (max-width: 600px) and (orientation: portrait) {
-  .image-logo {
-    position: relative;
-    height: 570px;
-    padding: 50px 0% 0;
-  }
+.home-quote {
+  font-size: clamp(10px, 5vw, 57px);
+  letter-spacing: 2px;
+  position: relative;
+  text-align: center;
 }
 
 .hz_logo {
@@ -312,6 +353,41 @@ body {
   bottom: 55%;
 }
 
+/*CAROUSEL GALLERY*/
+.family-photos-wrapper {
+  height: 70vh;
+  width: 80vw;
+}
+
+.family-photos {
+  overflow-y: hidden; /*in mobile view*/
+  display: flex;
+}
+
+.family-photos img {
+  display: block;
+  width: 100%;
+}
+
+.family-photos_img {
+  margin-bottom: 10px;
+  min-width: 100vw;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .family-photos {
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .family-photos_img {
+    min-width: auto;
+    min-height: 100vh;
+  }
+}
+
+/*PORTFOLIO*/
 .arts {
   position: relative;
   width: 100%;
@@ -321,20 +397,21 @@ body {
   bottom: 50px;
 }
 
-.gallery:hover {
-  background: #10334C;
+.carousel-gallery:hover {
+  background: var(--dark_blue);
 }
 
-.gallery {
+.carousel-gallery {
   margin: 10px;
   transition: 1s ease;
 }
 
-.gallery img {
+.carousel-gallery img {
   width: 100%;
   height: auto;
 }
 
+/**/
 .desc {
   padding: 15px;
   text-align: center;
@@ -364,7 +441,7 @@ body {
   clear: both;
 }
 
-
+/*PORTFOLIO*/
 .projects {
   position: relative;
   width: 100%;
@@ -389,7 +466,7 @@ body {
 .link {
   display: block;
   padding: 30px 20px;
-  background-color: #E0F2FF;
+  background-color: var(--white);
   overflow: hidden;
   position: relative;
   text-decoration: none;
@@ -398,7 +475,7 @@ body {
 .link:hover,
 .link:hover .project_detail {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .link:hover .edge {
@@ -412,28 +489,28 @@ h4 {
   overflow: hidden;
   font-weight: bold;
   font-size: 30px;
-  color: #081b29;
+  color: var(--dark_blue);
   z-index: 2;
   position: relative;
 }
 
 .smaller_text {
   font-size: 18px;
-  color: #081b29;
+  color: var(--dark_blue);
   z-index: 2;
   position: relative;
 }
 
 .project_detail {
   font-weight: bold;
-  color: #3BD8FF;
+  color: var(--light_blue);
   transition: color .5s ease;
 }
 
 .edge {
   height: 128px;
   width: 128px;
-  background-color: #3BD8FF;
+  background-color: var(--light_blue);
   z-index: 1;
   position: absolute;
   top: -75px;
@@ -449,7 +526,7 @@ h4 {
 }
 
 @media only screen and (max-width: 767px) {
-  .container {
+  .protfolio-container {
     width: 96%;
   }
 }
@@ -473,9 +550,10 @@ h4 {
   }
 }
 
+/*SKILLS*/
 .row h3 {
   font-size: 23px;
-  color: #3BD8FF;
+  color: var(--light_blue);
   font-weight: 800;
   margin-bottom: 30px;
 }
@@ -516,7 +594,7 @@ h4 {
 
 .skill {
   box-sizing: border-box;
-  border: 1px solid #3BD8FF;
+  border: 1px solid var(--light_blue);
   border-radius: 5px;
   bottom: 10px;
   width: 90%;
@@ -524,7 +602,7 @@ h4 {
 
 .skill_level {
   height: 10px;
-  background: #3BD8FF;
+  background: var(--light_blue);
   animation: color_change 3s;
   animation-iteration-count: 1;
   border-radius: 5px;
@@ -536,13 +614,14 @@ h4 {
   }
 
   to {
-    background: #3BD8FF;
+    background: var(--light_blue);
   }
 }
 
+/*PORTOFLIO INSIDE SPECIFICS*/
 .magazines-specific {
   text-decoration: none;
-  color: #ededed;
+  color: var(--white);
 }
 
 .shape-magazines {
@@ -551,14 +630,14 @@ h4 {
   height: 100px;
   border-radius: 50%;
   box-shadow:
-    inset 0 0 50px #fff,
-    inset 20px 0 80px #3BD8FF,
-    inset -20px 0 80px #0ff,
-    inset 20px 0 300px #3BD8FF,
-    inset -20px 0 300px #0ff,
-    0 0 50px #fff,
-    -10px 0 80px #3BD8FF,
-    10px 0 80px #0ff;
+    inset 0 0 50px var(--white),
+    inset 20px 0 80px var(--light_blue),
+    inset -20px 0 80px var(--light_blue),
+    inset 20px 0 300px var(--light_blue),
+    inset -20px 0 300px var(--light_blue),
+    0 0 50px var(--white),
+    -10px 0 80px var(--light_blue),
+    10px 0 80px var(--light_blue);
 }
 
 .shape-magazines p {
@@ -569,23 +648,28 @@ h4 {
   font-family: 'Dancing Script';
 }
 
+/*FAQ*/
 /*https://dev.to/felixdusengimana/lets-create-an-faq-section-with-html-and-css-only-detail-tag-explained-12gf*/
 details {
-  color: #3BD8FF;
+  color: var(--white);
   margin-bottom: 20px;
 }
 
 summary {
   font-weight: bold;
-  padding: .5em 1.3rem;
+  padding: 1em 1.3rem;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #3BD8FF;
+  border-bottom: 2px solid var(--white);
 }
 
 summary:after {
   content: "\002B";
+}
+
+details ol{
+  margin-left: 5%;
 }
 
 details[open] summary:after {
@@ -594,10 +678,15 @@ details[open] summary:after {
 
 details[open] div {
   padding: .5em 1em;
-  color: white;
+  color: var(--white);
 }
 
-.image-faq{
+details div a{
+  text-decoration: none;
+  color: var(--light_blue);
+}
+
+.image-faq {
   position: absolute;
   display: flex;
   height: 650px;
@@ -613,6 +702,7 @@ details[open] div {
   }
 }
 
+/*DASHBOARD*/
 .dash_table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -622,8 +712,8 @@ details[open] div {
 }
 
 .dash_table thead tr {
-  background-color: #3BD8FF;
-  color: #fff;
+  background-color: var(--light_blue);
+  color: var(--white);
 }
 
 .dash_table th,
@@ -632,11 +722,11 @@ details[open] div {
 }
 
 .dash_table tbody tr {
-  border-bottom: 0.1px solid #fff;
+  border-bottom: 0.1px solid var(--white);
 }
 
 .dash_table tbody tr:last-of-type {
-  border-bottom: 4px solid #3BD8FF;
+  border-bottom: 4px solid var(--light_blue);
 }
 
 @media (max-width: 700px) and (orientation: portrait) {
@@ -651,7 +741,7 @@ details[open] div {
   position: relative;
   cursor: pointer;
   bottom: 12px;
-  left:12px;
+  left: 12px;
 }
 
 .check-box input {
@@ -668,15 +758,15 @@ details[open] div {
   left: 0;
   height: 20px;
   width: 20px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
-.check-box:hover input ~ .checkmark {
+.check-box:hover input~.checkmark {
   background-color: #ccc;
 }
 
-.check-box input:checked ~ .checkmark {
-  background-color: #3BD8FF;
+.check-box input:checked~.checkmark {
+  background-color: var(--light_blue);
 }
 
 .checkmark:after {
@@ -685,7 +775,7 @@ details[open] div {
   display: none;
 }
 
-.check-box input:checked ~ .checkmark:after {
+.check-box input:checked~.checkmark:after {
   display: block;
 }
 
@@ -694,15 +784,15 @@ details[open] div {
   top: 2px;
   width: 5px;
   height: 10px;
-  border: solid white;
+  border: solid var(--white);
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
 
 .head-row {
   font-weight: bold;
-  color: #3BD8FF;
-  background-color: #fff;
+  color: var(--light_blue);
+  background-color: var(--white);
 }
 
 .table-extra-subjects {
@@ -712,18 +802,19 @@ details[open] div {
   right: 0;
 }
 
-.dash_table-right{
+.dash_table-right {
   width: 100px;
 }
 
-@media (max-width: 1400px){
-  .table-extra-subjects{
+@media (max-width: 1400px) {
+  .table-extra-subjects {
     font-size: 10px;
-    position:relative;
-    
+    position: relative;
+
   }
 }
 
+/*BLOG*/
 .blog_post {
   position: relative;
   width: 100%;
@@ -735,8 +826,8 @@ details[open] div {
 }
 
 .article_card {
-  background: #3BD8FF;
-  max-width: 300px;
+  background: var(--light_blue);
+  max-width: 400px;
   padding: 2rem 2rem 2rem 2rem;
   flex-basis: content;
   margin: 0 0px 15px;
@@ -745,11 +836,11 @@ details[open] div {
 }
 
 .article_card h3 {
-  color: #081b29;
+  color: var(--dark_blue);
 }
 
 .blogcard_description {
-  margin: 0 0 4rem 0;
+  margin: 0 0 3rem 0;
   max-height: 150px;
 }
 
@@ -762,19 +853,20 @@ details[open] div {
   align-items: center;
   border: none;
   outline: none;
-  background: linear-gradient(90deg, #10334C, #041e30);
+  background: linear-gradient(90deg, #10334C, var(--dark_blue));
   padding: 1.5rem 2rem;
   border-radius: 50px;
-  color: white;
+  color: var(--white);
   text-decoration: none;
   transition: all 0.2s ease-in;
 }
 
 .btn_blog:hover {
-  color: #3BD8FF;
-  background: white;
+  color: var(--light_blue);
+  background: var(--white);
 }
 
+/*FOOTER*/
 .footer {
   position: relative;
   width: 100%;
@@ -800,19 +892,19 @@ details[open] div {
   align-items: center;
   width: 40px;
   height: 40px;
-  border: 2px solid #3BD8FF;
+  border: 2px solid var(--light_blue);
   border-radius: 50%;
   background: transparent;
   text-decoration: none;
   font-size: 30px;
   z-index: 1;
   overflow: hidden;
-  color: #3BD8FF;
+  color: var(--light_blue);
   transition: .5s;
   position: relative;
 }
 
 .social-media a:hover {
-  color: #081b29;
-  background: #3BD8FF;
+  color: var(--dark_blue);
+  background: var(--light_blue);
 }
