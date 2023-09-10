@@ -691,8 +691,9 @@ details div a{
   display: flex;
   height: 650px;
   right: 0;
-  top: 20%;
+  top: 13%;
   padding: 50px 10% 0;
+  filter: drop-shadow(20px 20px 10px var(--dark_blue));
 }
 
 @media (max-width: 1300px) {
@@ -842,6 +843,7 @@ details div a{
 .blogcard_description {
   margin: 0 0 3rem 0;
   max-height: 150px;
+  color: var(--dark_blue);
 }
 
 .blogcard_date {
