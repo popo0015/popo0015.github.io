@@ -2,15 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing Script');
 
 /*main*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins';
-  outline: none;
-  border: none;
-}
-
 body {
   background: #081b29;
   color: var(--white);
@@ -22,15 +13,20 @@ body {
   --white: #ffffff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  outline: none;
+  border: none;
+}
+
 .blurry-background {
   background-size: cover;
   background-position: center center;
-  bottom: 0;
+  position: fixed;
   filter: blur(60px);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
   width: 100%;
   z-index: -2;
   max-height: 100vh;
@@ -710,6 +706,7 @@ details div a{
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 579px;
+  z-index: 2;
 }
 
 .dash_table thead tr {
@@ -775,9 +772,9 @@ details div a{
   background-color: var(--light_blue);
   height: 100%;
   position: absolute;
-  line-height: inherit
-
+  line-height: inherit;
 }
+
 .progress-bar-round{
   border-radius:16px;
 }
@@ -786,7 +783,16 @@ details div a{
   margin-left: 55%;
 }
 
-.submit-button{
+.passed{
+  background-color: #21B6A8;
+}
+
+.pending{
+  background-color: #DB983B;
+}
+
+.failed{
+  background-color: #DF505C;
 }
 
 /*BLOG*/

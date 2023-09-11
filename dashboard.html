@@ -79,8 +79,10 @@
             <td>Assessment website (Individual process assessment)</td>
             <td>2,5</td>
             <td>
-              <input type="text" style="width: 50px;">
-              <button type="submit" class="submit-button">Submit</button>
+              <form>
+                <input type="text" style="width: 50px;">
+                <button type="submit" id="submit-button" class="submit-button">Submit</button>
+              </form>
             </td>
           </tr>
           <tr>
@@ -276,30 +278,24 @@
             <td>Personal Proffesional Development Exploration</td>
             <td>CU75068V3</td>
             <td>12,5</td>
-            <td>Criterium focused interview</td>
-            <td>
-              <input type="text" style="width: 50px;">
-            </td>
+            <td class="passed">Criterium focused interview</td>
+            <td>8,8</td>
           </tr>
           <tr>
             <td>3, 4</td>
             <td>Business IT Consultancy Basics</td>
             <td>CU75081V1</td>
             <td>2,5</td>
-            <td>Video</td>
-            <td>
-              <input type="text" style="width: 50px;">
-            </td>
+            <td class="failed">Video</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>all year</td>
             <td>IT Personality</td>
             <td>-</td>
             <td>2,5</td>
-            <td>Portfolio</td>
-            <td>
-              <input type="text" style="width: 50px;">
-            </td>
+            <td class="pending">Portfolio</td>
+            <td>-</td>
           </tr>
         </tbody>
       </table>
@@ -307,12 +303,18 @@
 
     <!--progress bar-->
     <br>
-    <b><p>STUDY MONITOR</p></b>
+    <b>
+      <p>STUDY MONITOR</p>
+    </b>
     <br>
     <div class="progress-container progress-bar-round">
       <div class="progressbar progress-bar-round" style="width:25%"></div>
     </div>
-    <center id="NBSA"><p>| <br> <p>45EC - *NBSA</p></p></center>
+    <center id="NBSA">
+      <p>| <br>
+      <p>45EC - *NBSA</p>
+      </p>
+    </center>
   </section>
 
   <!--NBSA at the bottom-->
