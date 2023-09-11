@@ -709,7 +709,7 @@ details div a{
   margin: 25px 0;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
   text-align: center;
-  width: 650px;
+  width: 579px;
 }
 
 .dash_table thead tr {
@@ -737,59 +737,6 @@ details div a{
   }
 }
 
-.check-box {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  bottom: 12px;
-  left: 12px;
-}
-
-.check-box input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: var(--white);
-}
-
-.check-box:hover input~.checkmark {
-  background-color: #ccc;
-}
-
-.check-box input:checked~.checkmark {
-  background-color: var(--light_blue);
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.check-box input:checked~.checkmark:after {
-  display: block;
-}
-
-.check-box .checkmark:after {
-  left: 7px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
-  border: solid var(--white);
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-}
-
 .head-row {
   font-weight: bold;
   color: var(--light_blue);
@@ -804,15 +751,39 @@ details div a{
 }
 
 .dash_table-right {
-  width: 100px;
+  width: 70px;
 }
 
 @media (max-width: 1400px) {
   .table-extra-subjects {
-    font-size: 10px;
     position: relative;
-
   }
+
+  .dash_table-right {
+    width: 50px;
+  }
+}
+
+.progress-container{
+  width: 100%;
+  height: 1.5em;
+  position: relative;
+  background-color: var(--white);
+}
+
+.progressbar{
+  background-color: var(--light_blue);
+  height: 100%;
+  position: absolute;
+  line-height: inherit
+
+}
+.progress-bar-round{
+  border-radius:16px;
+}
+
+#NBSA{
+  margin-left: 55%;
 }
 
 /*BLOG*/
