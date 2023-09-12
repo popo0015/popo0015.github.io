@@ -89,7 +89,6 @@ body {
   top: 0;
   right: 0;
   background-color: var(--light_blue);
-  overflow-x: hidden;
   transition: 1s;
   padding-top: 60px;
 }
@@ -393,21 +392,20 @@ body {
   bottom: 50px;
 }
 
-.carousel-gallery:hover {
-  background: var(--dark_blue);
+.gallery:hover {
+  background: #10334C;
 }
 
-.carousel-gallery {
+.gallery {
   margin: 10px;
   transition: 1s ease;
 }
 
-.carousel-gallery img {
+.gallery img {
   width: 100%;
   height: auto;
 }
 
-/**/
 .desc {
   padding: 15px;
   text-align: center;
@@ -437,7 +435,7 @@ body {
   clear: both;
 }
 
-/*PORTFOLIO*/
+
 .projects {
   position: relative;
   width: 100%;
@@ -462,7 +460,7 @@ body {
 .link {
   display: block;
   padding: 30px 20px;
-  background-color: var(--white);
+  background-color: #E0F2FF;
   overflow: hidden;
   position: relative;
   text-decoration: none;
@@ -471,7 +469,7 @@ body {
 .link:hover,
 .link:hover .project_detail {
   text-decoration: none;
-  color: var(--white);
+  color: white;
 }
 
 .link:hover .edge {
@@ -485,28 +483,28 @@ h4 {
   overflow: hidden;
   font-weight: bold;
   font-size: 30px;
-  color: var(--dark_blue);
+  color: #081b29;
   z-index: 2;
   position: relative;
 }
 
 .smaller_text {
   font-size: 18px;
-  color: var(--dark_blue);
+  color: #081b29;
   z-index: 2;
   position: relative;
 }
 
 .project_detail {
   font-weight: bold;
-  color: var(--light_blue);
+  color: #3BD8FF;
   transition: color .5s ease;
 }
 
 .edge {
   height: 128px;
   width: 128px;
-  background-color: var(--light_blue);
+  background-color: #3BD8FF;
   z-index: 1;
   position: absolute;
   top: -75px;
@@ -522,7 +520,7 @@ h4 {
 }
 
 @media only screen and (max-width: 767px) {
-  .protfolio-container {
+  .container {
     width: 96%;
   }
 }
@@ -544,6 +542,27 @@ h4 {
   .smaller_text {
     font-size: 16px;
   }
+}
+
+.row h3 {
+  font-size: 23px;
+  color: #3BD8FF;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.home-detail p {
+  font-size: 16px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
 }
 
 /*SKILLS*/
