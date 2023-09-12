@@ -355,7 +355,8 @@ body {
 }
 
 .family-photos {
-  overflow-y: hidden; /*in mobile view*/
+  overflow-y: hidden;
+  /*in mobile view*/
   display: flex;
 }
 
@@ -565,28 +566,15 @@ h4 {
 
 }
 
+.tables-main {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*SKILLS*/
-.row h3 {
-  font-size: 23px;
-  color: var(--light_blue);
-  font-weight: 800;
-  margin-bottom: 30px;
-}
-
-.home-detail p {
-  font-size: 16px;
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-
-}
-
 .home-skills {
   justify-content: space-between;
   align-items: center;
@@ -683,7 +671,7 @@ summary:after {
   content: "\002B";
 }
 
-details ol{
+details ol {
   margin-left: 5%;
 }
 
@@ -696,7 +684,7 @@ details[open] div {
   color: var(--white);
 }
 
-details div a{
+details div a {
   text-decoration: none;
   color: var(--light_blue);
 }
@@ -750,6 +738,11 @@ details div a{
   .dash_table {
     font-size: 10px;
     width: 70vw;
+    margin-left: -5%;
+  }
+
+  .dash_table:nth-child(7){
+    width: 70px;
   }
 }
 
@@ -761,9 +754,8 @@ details div a{
 
 .table-extra-subjects {
   position: absolute;
-  z-index: 1;
   top: 17%;
-  right: 0;
+  right: 10%;
 }
 
 .dash_table-right {
@@ -771,46 +763,51 @@ details div a{
 }
 
 @media (max-width: 1400px) {
+  .tables-main {
+    flex-direction: column;
+  }
+
   .table-extra-subjects {
     position: relative;
   }
 
   .dash_table-right {
-    width: 50px;
+    width: 50vw;
+    left: 10%;
   }
 }
 
-.progress-container{
+.progress-container {
   width: 100%;
   height: 1.5em;
   position: relative;
   background-color: var(--white);
 }
 
-.progressbar{
+.progressbar {
   background-color: var(--light_blue);
   height: 100%;
   position: absolute;
   line-height: inherit;
 }
 
-.progress-bar-round{
-  border-radius:16px;
+.progress-bar-round {
+  border-radius: 16px;
 }
 
-#NBSA{
+#NBSA {
   margin-left: 55%;
 }
 
-.passed{
+.passed {
   background-color: #21B6A8;
 }
 
-.pending{
+.pending {
   background-color: #DB983B;
 }
 
-.failed{
+.failed {
   background-color: #DF505C;
 }
 
