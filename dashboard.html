@@ -10,12 +10,11 @@
   <link rel="icon" type="image/x-icon" href="PHOTOS/flavicon.png">
   <link rel="stylesheet" href="style.css">
   <script src="aside_bar.js"></script>
-  <script src="dashboard-progress.js"></script>
   <!--connect the html document with Boxicons website-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
+<body onload="load()">
   <!--back image-->
   <img src="PHOTOS/blurry_back.jpg" alt="background" class="blurry-background">
 
@@ -71,38 +70,41 @@
             <tr class="head-row">
               <td>Course</td>
               <td>Course number</td>
-              <td>Exam</td>
+              <td>Assessment</td>
               <td>EC</td>
               <td>Grade</td>
             </tr>
             <tr>
               <td>Program- & Career Orientation (PCO)</td>
               <td>CU75001V3</td>
-              <td>Assessment website (Individual process assessment)</td>
+              <td class="assessment">Assessment website (Individual process assessment)</td>
               <td>2,5</td>
               <td>
-                <form>
-                  <input type="text" style="width: 50px;">
-                  <button type="submit" id="submit-button" class="submit-button">Submit</button>
-                </form>
+                <input type="text" style="width: 50px;">
+                <button type="button" id="submit-button" class="submit-button">
+                  <i class='bx bx-check'></i></button>
               </td>
             </tr>
             <tr>
               <td>Computer Science Basics (CSB)</td>
               <td>CU75002V2</td>
-              <td>Written knowledge test</td>
+              <td class="assessment">Written knowledge test</td>
               <td>5</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
             <tr>
               <td>Programming Basics (PBA)</td>
               <td>CU75003V1</td>
-              <td>Case study exam</td>
+              <td  class="assessment">Case study exam</td>
               <td>5</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
           </tbody>
@@ -119,24 +121,28 @@
             <tr class="head-row">
               <td>Course</td>
               <td>Course number</td>
-              <td>Exam</td>
+              <td>Assessment</td>
               <td>EC</td>
               <td>Grade</td>
             </tr>
             <tr>
               <td rowspan="2">Object-Oriented Programming (OOP)</td>
               <td rowspan="2">CU75004V1</td>
-              <td>Presentation</td>
+              <td  class="assessment">Presentation</td>
               <td>5</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
             <tr>
-              <td>Case study exam</td>
+              <td  class="assessment">Case study exam</td>
               <td>5</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
           </tbody>
@@ -153,38 +159,46 @@
             <tr class="head-row">
               <td>Course</td>
               <td>Course number</td>
-              <td>Exam</td>
+              <td>Assessment</td>
               <td>EC</td>
               <td>Grade</td>
             </tr>
             <tr>
               <td rowspan="4">Framework Project 1</td>
               <td rowspan="4">CU75080V1</td>
-              <td>On-site case study exam</td>
+              <td class="assessment">On-site case study exam</td>
               <td>5</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
             <tr>
-              <td>Database exam</td>
+              <td class="assessment">Database exam</td>
               <td>1,25</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
             <tr>
-              <td>Group presentation on project result</td>
+              <td class="assessment">Group presentation on project result</td>
               <td>2,5</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
             <tr>
-              <td>Group portfolio with individual elements on requirements</td>
+              <td class="assessment">Group portfolio with individual elements on requirements</td>
               <td>1,25</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
           </tbody>
@@ -201,31 +215,37 @@
             <tr class="head-row">
               <td>Course</td>
               <td>Course number</td>
-              <td>Exam</td>
+              <td>Assessment</td>
               <td>EC</td>
               <td>Grade</td>
             </tr>
             <tr>
               <td rowspan="3">Framework Project 2</td>
               <td rowspan="3">CU75011V3</td>
-              <td>Final delivery</td>
+              <td class="assessment">Final delivery</td>
               <td>2,5</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
             <tr>
-              <td>Report of acceptance tests and optional assessments</td>
+              <td class="assessment">Report of acceptance tests and optional assessments</td>
               <td>2,5</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
             <tr>
-              <td>IT Development portfolio</td>
+              <td class="assessment">IT Development portfolio</td>
               <td>5</td>
               <td>
-                <input type="text" style="width: 50px;">
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
               </td>
             </tr>
           </tbody>
@@ -242,13 +262,13 @@
           <tbody>
             <tr class="head-row">
               <td>Courses taken</td>
-              <td>Exams taken</td>
+              <td>Assessment number</td>
               <td>EC taken</td>
               <td>Grade</td>
             </tr>
             <tr>
               <td>8</td>
-              <td>8</td>
+              <td>15</td>
               <td>60</td>
               <td>10</td>
             </tr>
@@ -272,7 +292,7 @@
               <td>Course</td>
               <td>Course number</td>
               <td>EC taken</td>
-              <td>Exam</td>
+              <td>Assessment</td>
               <td>Grade</td>
             </tr>
             <tr>
@@ -280,24 +300,36 @@
               <td>Personal Proffesional Development Exploration</td>
               <td>CU75068V3</td>
               <td>12,5</td>
-              <td class="passed">Criterium focused interview</td>
-              <td>8,8</td>
+              <td class="assessment">Criterium focused interview</td>
+              <td>
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
+              </td>
             </tr>
             <tr>
               <td>3, 4</td>
               <td>Business IT Consultancy Basics</td>
               <td>CU75081V1</td>
               <td>2,5</td>
-              <td class="failed">Video</td>
-              <td>5</td>
+              <td class="assessment">Video</td>
+              <td>
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
+              </td>
             </tr>
             <tr>
               <td>all year</td>
               <td>IT Personality</td>
               <td>-</td>
               <td>2,5</td>
-              <td class="pending">Portfolio</td>
-              <td>-</td>
+              <td class="assessment">Portfolio</td>
+              <td>
+                 <input type="text" style="width: 50px;">
+                  <button type="button" id="submit-button" class="submit-button">
+                    <i class='bx bx-check'></i></button>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -309,6 +341,7 @@
         <p>STUDY MONITOR</p>
       </b>
       <br>
+
       <div class="progress-container progress-bar-round">
         <div class="progressbar progress-bar-round" style="width:25%"></div>
       </div>
@@ -344,6 +377,8 @@
     <a href="https://hz.nl/" target="_blank"><img src="PHOTOS/hz_logo.png" class="hz_logo"
         alt="Hz university of applied sciences logo"></a>
   </section>
+
+  <script src="dashboard-progress.js"></script>
 </body>
 
 </html>

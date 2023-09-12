@@ -712,7 +712,7 @@ details div a {
   margin: 25px 0;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
   text-align: center;
-  width: 579px;
+  width: 560px;
   z-index: 2;
 }
 
@@ -741,8 +741,13 @@ details div a {
     margin-left: -5%;
   }
 
-  .dash_table:nth-child(7){
-    width: 70px;
+  .dash_table-right {
+    font-size: 9px;
+  }
+
+  .table-extra-subjects {
+    right: 0%;
+    left: 0%;
   }
 }
 
@@ -777,6 +782,28 @@ details div a {
   }
 }
 
+.disappear {
+  animation-name: fadeout;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0; display:none;}
+}
+
+.show-p {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {opacity: 0; display:none;}
+  to {opacity: 1; display:block;}
+}
+
 .progress-container {
   width: 100%;
   height: 1.5em;
@@ -799,16 +826,28 @@ details div a {
   margin-left: 55%;
 }
 
-.passed {
-  background-color: #21B6A8;
+.submit-button {
+  top: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  border: 2px solid var(--light_blue);
+  border-radius: 50%;
+  background: transparent;
+  text-decoration: none;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  color: var(--light_blue);
+  transition: .5s;
+  position: relative;
 }
 
-.pending {
-  background-color: #DB983B;
-}
-
-.failed {
-  background-color: #DF505C;
+.submit-button:hover {
+  color: var(--dark_blue);
+  background: var(--light_blue);
 }
 
 /*BLOG*/
