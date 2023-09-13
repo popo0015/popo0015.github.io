@@ -951,6 +951,14 @@ details div a {
   background: var(--white);
 }
 
+.blog-profession-companies {
+
+}
+
+.blog-reference{
+  font-style: italic;
+}
+
 /*FOOTER*/
 .footer {
   position: relative;
