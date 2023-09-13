@@ -211,6 +211,8 @@ body {
   /*The clamp() CSS function clamps a middle value within a range of 
   values between a defined minimum bound and a maximum bound.*/
   letter-spacing: 2px;
+  color: var(--white);
+  text-shadow: 2px 2px 10px black;
   position: relative;
   text-align: center;
   animation: 2s big_text ease-out;
@@ -243,7 +245,8 @@ body {
 .big-landing_page-text p:nth-child(2) {
   font-size: 50px;
   position: absolute;
-  color: rgba(0, 255, 255, 0.3);
+  color: var(--white);
+  text-shadow: 2px 2px 14px black;
   top: 0%;
   transform: rotate(-30deg);
 }
@@ -251,7 +254,8 @@ body {
 .big-landing_page-text p:nth-child(3) {
   font-size: 120px;
   position: absolute;
-  color: rgba(0, 255, 255, 0.4);
+  color: var(--white);
+  text-shadow: 2px 2px 14px black;
   bottom: -25%;
   transform: rotate(30deg);
 }
@@ -259,7 +263,8 @@ body {
 .big-landing_page-text p:nth-child(4) {
   font-size: 120px;
   position: absolute;
-  color: rgba(0, 255, 255, 0.7);
+  color: var(--white);
+  text-shadow: 2px 2px 14px black;
   top: -5%;
   right: 10%;
   transform: rotate(-30deg);
@@ -268,7 +273,8 @@ body {
 .big-landing_page-text p:nth-child(5) {
   font-size: 70px;
   position: absolute;
-  color: rgba(0, 255, 255, 0.2);
+  color: var(--white);
+  text-shadow: 2px 2px 14px black;
   bottom: -15%;
   right: 10%;
   transform: rotate(30deg);
@@ -292,6 +298,16 @@ body {
 
 .landing_page_list li {
   margin: 30px 20px;
+}
+
+.banner-home-image{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 16%;
+  margin-bottom: 100px;
+  z-index:-2;
+  opacity: 0.5;
 }
 
 .btn-box a {
@@ -331,6 +347,14 @@ body {
 @media (max-width: 600px) and (orientation: portrait) {
   .row {
     max-width: 350px;
+  }
+
+  .banner-home-image{
+    top: 25%;
+    object-fit: cover;
+    height: 110%;
+    width: 100vw;
+    overflow: hidden;
   }
 }
 
