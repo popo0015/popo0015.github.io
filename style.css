@@ -381,6 +381,7 @@ body {
 
 /*CAROUSEL GALLERY*/
 .family-photos {
+  max-width: 70vw;
   position: relative;
   left: 15%;
 }
