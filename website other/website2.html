@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles for website2.css">
+	<script src="https://kit.fontawesome.com/3484552b71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<!--ELEMENT FOR OPENING HOURS - https://codepen.io/sandstedt/pen/ZWvgpz/-->
+	<div class="openingHours">
+			<button class="button">HOLD</button>
+			<div class="modal">
+				<div class="modal__content">
+					<p>Opening Hours</p>
+					<p>MON-FRI: 9AM - 16PM</p>    
+				</div>
+			</div>
+	</div>
+	
+	<!--NAVIGATION BAR-->	
+	<nav class="menu-bar">
+		<div class="menus">
+			<a href="#aboutus"> About us </a>
+			<a href="#books"> Books </a>
+			<a href="#contact"> Contact us </a>
+			<a href="log in.html"> Log in </a>
+		</div>
+		<img class="logo-image" src="logo white.png">
+		<!---https://www.w3schools.com/howto/howto_css_searchbar.asp-->
+		<input type="text" placeholder="Search..">
+	</nav>
+	
+	
+	<!--LANDING PAGE-->
+	<div class="website">
+		<section class="banner-area banner">
+			<div class="img-area"></div>
+			<div class="banner-text">
+				<h1>Library of your dreams</h1>
+				<h3>Second English Language School</h3>
+				<a href="register.html" class="btn">Register</a>
+			</div>
+		</section>
+	
+	<!--MAIN BODY-->
+	<!--SECION 1: ABOUT US-->
+		<section class="aboutus-area" id="aboutus">
+		<br>
+			<h3 class="header-text">About us</h3>
+			<div class="section-two">
+				<div><p>The library and information center is closely related 
+				to learning, as well as to the free time of students and 
+				teachers. It is rich in publications in Bulgarian 
+				and English. The library and information center is closely related 
+				to learning, as well as to the free time of students and 
+				teachers.</p>
+				<p> It is rich in publications in Bulgarian 
+				and English. The library and information center is closely related 
+				to learning, as well as to the free time of students and 
+				teachers. It is rich in publications in Bulgarian 
+				and English.</p></div>
+				<div style="float:right;"><img src="many books.jpg" align="right"></div>
+			</div>
+		</section>
+		
+	<!--SECION 2: BOOKS-->
+		<section class="books-area" id="books">
+		<br>
+			<h3 class="header-text">Books</h3>
+			<p>Some information about the offered books and materials.</p>
+			
+			<!--books' sections https://codemyui.com/blog-archive-image-card-hover-animation/-->
+			<div class="book-content">
+			  <div class="card">
+				<div class="content">
+				  <h2 class="title">English Literature</h2>
+				  <p class="copy">Check out many classical english books.</p>
+				  <a href="ENGLISH_LITERATURE2.html"><button class="btn">View Books</button></a>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="content">
+				  <h2 class="title">Bulgarian Literature</h2>
+				  <p class="copy">Check out many classical bulgarian books.</p>
+				  <a href="BULGARIAN_LITERATURE2.html"><button class="btn">View Books</button></a>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="content">
+				  <h2 class="title">Study materials</h2>
+				  <p class="copy">Check out our study-programme books.</p>
+				  <a href="STUDY MATERIALS2.html"><button class="btn">View Books</button></a>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="content">
+				  <h2 class="title">Fiction</h2>
+				  <p class="copy">Check out many modern fiction books.</p>
+				  <a href="FICTION2.html"><button class="btn">View Books</button></a>
+				</div>
+			  </div>
+			</div>
+		</section>
+	
+	<!--CONTACT US - https://codepen.io/JonLehman/pen/yOdbOG-->
+		<section class="contact" id="contact">
+		<br>
+			<h3 class="header-text">CONTACT US</h3>
+			<div class="row input-container">
+				<div class="col-xs-12">
+					<div class="styled-input wide">
+						<input type="text" required />
+						<label>First and second name</label> 
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="styled-input">
+						<input type="text" required />
+						<label>Email</label> 
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="styled-input" style="float:right;">
+						<input type="text" required />
+						<label>Phone Number</label> 
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="styled-input wide">
+						<textarea required></textarea>
+						<label>Message</label>
+					</div>
+				</div>
+				<a class="submit-btn" href="#">Send Message</a>
+				</div>
+		</section>
+		<br>
+	</div>
+</body>
+
+</html>

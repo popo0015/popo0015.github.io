@@ -59,7 +59,7 @@ function load() {
         currObj.btn.parentElement.classList.add('disappear');
         let p = document.createElement('p');
         if(currObj.grade === '?'){
-            p.textContent = 'Pending...';
+            p.textContent = 'Pending';
         }
         else{
             p.textContent = currObj.grade;

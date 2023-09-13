@@ -418,7 +418,7 @@ img:nth-child(5) {
 }
 
 .gallery:hover {
-  background: var(--dark_blue);
+  background: #10334C;
 }
 
 .gallery {
