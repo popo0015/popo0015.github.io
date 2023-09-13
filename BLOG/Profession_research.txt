@@ -1,18 +1,18 @@
 Mercedes-AMG Petronas Formula One Team:
 
-Projects/Work: Mercedes-AMG Petronas Formula One Team is involved in Formula 1 racing. They focus on designing and manufacturing race cars, conducting aerodynamic research, data analysis, and optimizing race strategies.
+Projects/Work: Mercedes-AMG Petronas Formula One Team focuses on designing and manufacturing high-performance race cars, conducting aerodynamic research, data analysis, and optimizing race strategies. They slogan is: 'We design. We manufacture. We race.' for a reason.
 
-IT Technology: They work with various IT technologies, including high-performance computing, simulation software, data analytics tools, and telemetry systems for real-time data transmission from the car to the pit.
+IT Technology: They work with various IT technologies, including high-performance computing, simulation software, data analytics tools, and  systems for real-time data transmission from the car to the pit, enhancing their ability to understand vehicle performance factors and produce optimal solutions and designs. 
 
-Staff Size: As of my last update, they had over 1,500 employees.
+Staff Size: Over 1,500 employees spreading over variety of roles: Technical Team, Operations Team, Race Team, Business Support Team.
 
 Company Culture: Mercedes-AMG Petronas Formula One Team is known for its commitment to excellence and innovation. They have a collaborative and competitive culture that emphasizes continuous improvement and winning championships.
 
 International Operations: Yes, they are a global team with operations spanning several countries, including the United Kingdom and Germany.
 
-Job Descriptions: They offer a wide range of positions, including software developers, data analysts, aerodynamicists, mechanical engineers, race strategists, and more.
+Job Descriptions: Based in the heart of ‘Motorsport Valley’ in south Northamptonshire, Mercedes offers a wide range of positions in different teams. Some positions offered include software developers, data analysts, aerodynamicists, mechanical engineers, race strategists, etc.
 
-References: You can find more information on their official website: https://www.mercedesamgf1.com/
+References: You can find more information on their official website: https://www.mercedesamgf1.com/careers
 
 Mercedes-AMG Petronas Formula One Team is a renowned force in Formula 1, known for its excellence in designing and manufacturing race cars, extensive data analysis, and cutting-edge aerodynamic research. They employ over 1,500 professionals globally and foster a culture of innovation and excellence, making them a top choice. I see myself working here because my love for motorsports and IT aligns perfectly with their vision, allowing me to pursue a dream career rather than just a job, where I can contribute to the development of the team I've always admired.
 
@@ -22,21 +22,23 @@ Mercedes-AMG Petronas Formula One Team is a renowned force in Formula 1, known f
 
 Scuderia Ferrari:
 
-Projects/Work: Ferrari's racing team, Scuderia Ferrari, participates in Formula 1. They are involved in designing and building Formula 1 cars, engine development, and improving race performance.
+Projects/Work: Comming up with a F1 car design which is not only technologically advanced, but also captivating to the eye and aggressive-looking without stepping over the current technical rules. Their goal is to create a world-championship-winning car that can see the glory of its ancestors.
 
-IT Technology: Ferrari uses cutting-edge IT technology, including computational fluid dynamics (CFD) simulations, data analytics tools, and advanced telemetry systems.
+IT Technology: Ferrari uses cutting-edge IT technology, including computational fluid dynamics (CFD) simulations, data analytics tools, and advanced telemetry systems. The partnerships with DXC Technology and HCL Software habe provided the racing team with ICT infrastructures and human machines interfaces. 
 
 Staff Size: As of my last update, they had around 1,000 employees.
 
-Company Culture: Ferrari is known for its passion for racing and dedication to craftsmanship and excellence. They have a strong and iconic brand identity.
+Company Culture: The inspiring work environment is key to unleashing everyone’s talent. Ferrari has a strong and iconic brand identity which is a strong internal motivator for more than 1,000 employees.
 
 International Operations: Ferrari operates internationally and is headquartered in Maranello, Italy, with a global presence.
 
 Job Descriptions: They offer positions in IT support, software development, engineering, aerodynamics, and various technical and administrative roles.
 
-References: You can find more information on their official website: https://www.ferrari.com/en-NL/formula1
+References: You can find more information on their official website: https://www.ferrari.com/en-EN/corporate/career
 
-Scuderia Ferrari, the iconic Italian racing team, is deeply involved in Formula 1, with a strong emphasis on crafting Formula 1 cars, engine development, and performance enhancement. With a staff size of approximately 1,000 employees and a culture deeply rooted in passion and craftsmanship, Ferrari is an appealing prospect. For me, this is an ideal fit as my combined passion for motorsports and IT would not only fulfill my professional aspirations but also feel like a dream come true, contributing to a team I've always held in high regard.
+Scuderia Ferrari, the iconic Italian racing team, is deeply involved in Formula 1, with a strong emphasis on crafting Formula 1 cars, engine development, and performance enhancement. With a staff size of approximately 1,000 employees and a culture deeply rooted in passion and craftsmanship, Ferrari is an appealing prospect.
+
+Ferarri is motivated to innovate the technology that transforms the vehicle information capabilities and enhances the driving experience for all. That environment based on dedication and continuous innovation is an ideal fit for me. I always strive for development and my vision for the future of IT and technologies usage aligns perfectly with Scuderia Ferrari's goals. Thus, I see myself working for the team in the future - not only will I feel at home regarding the mindset of employees but also it would be a dream come true.
 
 
 
@@ -44,20 +46,19 @@ Scuderia Ferrari, the iconic Italian racing team, is deeply involved in Formula 
 
 Red Bull Racing:
 
-Projects/Work: Red Bull Racing competes in Formula 1 and focuses on designing and developing high-performance race cars, improving aerodynamics, and optimizing race strategies.
+Projects/Work: Red Bull Racing not only designs and develops a high-performance race cars, but also addresses the environmental impact of its activities. Via a strong partnership with Gold Standart, the team's goal is to tackle some of the biggest barriers to global sustainable development by the implementation of smart technology.
 
-IT Technology: They utilize advanced IT technology for simulation, data analysis, and real-time telemetry systems.
+IT Technology: Embarking on their sustainability drive to reach Carbon Net Zero by 2030, RedBull is in the process of implementing a renewable energy supplier, smart building technology for new and upgraded facilities, etc. 
 
 Staff Size: As of my last update, they had over 700 employees.
 
-Company Culture: Red Bull Racing is known for its innovative and dynamic culture. They emphasize creativity, teamwork, and pushing boundaries.
+Company Culture: RedBull emphasize creativity, teamwork, and pushing boundaries. Much of their success is thanks to the diversity of thought and spectrum of skill sets held within the team. 
 
 International Operations: Red Bull Racing is based in the United Kingdom and participates in Formula 1 races worldwide.
 
-Job Descriptions: They offer positions in IT support, software engineering, data engineering, aerodynamics, and other technical and non-technical roles.
+Job Descriptions: RedBull offers positions in differents fields - as any other complex Formula 1 team. Particularly working within the Technology & Analysis Tools offers a unique opportunity to make a significant contribution to technology that will define the car performance.
 
-References: You can find more information on their official website: https://www.redbullracing.com/int-en/
+References: You can find more information on their https://www.redbullracing.com/int-en/jobs
 
-Scuderia Ferrari, the iconic Italian racing team, is deeply involved in Formula 1, with a strong emphasis on crafting Formula 1 cars, engine development, and performance enhancement. With a staff size of approximately 1,000 employees and a culture deeply rooted in passion and craftsmanship, Ferrari is an appealing prospect. For me, this is an ideal fit as my combined passion for motorsports and IT would not only fulfill my professional aspirations but also feel like a dream come true, contributing to a team I've always held in high regard.
-
+Red Bull Racing, with its 700-strong workforce, is at the forefront of Formula 1 excellence. The team, based in the UK, thrives on innovation and creativity, constantly pushing the boundaries of what's possible in motorsports. They leverage cutting-edge IT technology for simulation and data analysis, giving them a competitive edge on the track. Red Bull Racing offers a diverse range of roles, from IT support to aerodynamics, making it an ideal destination for those passionate about both technology and racing. Joining this dynamic team is like living a dream for motorsports enthusiasts with a flair for IT innovation.
 
