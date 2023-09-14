@@ -1164,6 +1164,10 @@ details div a {
   background-size: auto 100%;
 }
 
+#blog-article-study-journey{
+  top: 15%;
+}
+
 @media (max-width: 700px) and (orientation: portrait) {
 
   .company-goals,
@@ -1178,6 +1182,10 @@ details div a {
   .swot-staff,
   .swot-description {
     background-size: 100% auto;
+  }
+
+  #blog-article-study-journey{
+    top: 30px;
   }
 }
 
