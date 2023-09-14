@@ -74,7 +74,5 @@ function load() {
         p.classList.add('show-p');
         await new Promise(r => setTimeout(r, 2000));
         currObj.box.parentElement.appendChild(p);
-        
     }
-
 }
