@@ -1168,6 +1168,10 @@ details div a {
   top: 15%;
 }
 
+video{
+  width: 375px;
+}
+
 @media (max-width: 700px) and (orientation: portrait) {
 
   .company-goals,
