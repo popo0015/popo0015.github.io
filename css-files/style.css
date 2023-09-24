@@ -97,6 +97,17 @@ body {
   right: 0;
   background-color: var(--light_blue);
   padding-top: 60px;
+  opacity: 1;
+  animation: show 1s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .sidenav a {

@@ -7,4 +7,5 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0px";
     document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("mySidenav");
 }
