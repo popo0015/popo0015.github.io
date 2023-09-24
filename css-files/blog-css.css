@@ -74,22 +74,22 @@
   }
   
   .swot-strength {
-    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(PHOTOS/sport\ photo\ -\ kid.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(../photos/sport-photo-kid.jpg);
     background-size: 100% auto;
   }
   
   .swot-opportunity {
-    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(PHOTOS/university\ photo.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(../photos/university-photo.jpg);
     background-size: 100% auto;
   }
   
   .swot-weakness {
-    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(PHOTOS/meditating.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(../photos/meditating.jpg);
     background-size: auto 100%;
   }
   
   .swot-threat {
-    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(PHOTOS/company-description.png);
+    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(../photos/company-description.png);
     background-size: 100% auto;
   }
   
@@ -212,22 +212,22 @@
   }
   
   .company-goals {
-    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(PHOTOS/company-goal.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(../photos/company-goal.jpg);
     background-size: auto 100%;
   }
   
   .company-tech {
-    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(PHOTOS/company-tech.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(../photos/company-tech.jpg);
     background-size: auto 100%;
   }
   
   .company-staff {
-    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(PHOTOS/company-staff.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(../photos/company-staff.jpg);
     background-size: auto 100%;
   }
   
   .company-description {
-    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(PHOTOS/company-description.png);
+    background-image: linear-gradient(to bottom, rgba(47, 167, 197, 0.6), rgba(8, 27, 41, 1)), url(../photos/company-description.png);
     background-size: auto 100%;
   }
   
