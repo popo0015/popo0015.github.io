@@ -1,6 +1,9 @@
+.landing_page_list li {
+  margin: 30px 20px;
+}
+
 /*CAROUSEL GALLERY*/
 .family-photos {
-    margin-top: 150px;
     max-width: 70vw;
     position: relative;
     left: 15%;
