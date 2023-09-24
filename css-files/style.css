@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Dancing Script');
+
+/*main*/
+body {
+  background: var(--dark_blue);
+  color: var(--white);
+}
+
+:root {
+  --light_blue: rgb(59, 216, 255);
+  --dark_blue: rgb(8, 27, 41);
+  --white: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  outline: none;
+  border: none;
+}
+
+.blurry-background {
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  filter: blur(60px);
+  width: 100%;
+  z-index: -2;
+  max-height: 100vh;
+}
+
+/*Main and side navigation*/
+.header {
+  top: 0;
+  width: 100%;
+  padding: 2rem 10%;
+  display: flex;
+  z-index: 5;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-color: rgba(var(--dark_blue), 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.logo a {
+  font-family: 'Dancing Script';
+  font-size: 30px;
+  color: var(--light_blue);
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: .5s;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navbar li a:hover:not(.active) {
+  color: var(--light_blue);
+}
+
+.active {
+  background-color: var(--light_blue);
+  border-radius: 30px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  display: none;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: var(--light_blue);
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/*General page structure*/
+.home {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 10% 0;
+  /*padding:length|initial|inherit; length=top & bottom; initial=left & right*/
+}
+
+.home .home-detail {
+  max-width: 600px;
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .home .home-detail {
+    max-width: 350px;
+  }
+}
+
+.home-detail h3 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  position: relative;
+}
+
+.home-detail h5 {
+  color: var(--white);
+  text-decoration: underline wavy 1.5px var(--light_blue);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  margin-bottom: -20px;
+}
+
+/*that is for the second "child" of h3 in home-detail - basically the second h3*/
+.home-detail h3:nth-child(2) {
+  font-size: 23px;
+  color: var(--light_blue);
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.home-detail p {
+  font-size: 16px;
+  position: relative;
+  margin: 20px 0 40px;
+}
+
+.home .btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 345px;
+}
+
+.image-logo {
+  position: absolute;
+  display: flex;
+  height: 650px;
+  right: 0;
+  top: 4%;
+  padding: 50px 10% 0;
+}
+
+@media (max-width: 1300px) {
+  .image-logo {
+    position: relative;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .image-logo {
+    position: relative;
+    height: 570px;
+    padding: 50px 0% 0;
+  }
+}
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  color: var(--dark_blue);
+  background: var(--light_blue);
+  border: 2px solid var(--light_blue);
+  height: 100%;
+  width: 150px;
+  text-decoration: none;
+  border-radius: 8px;
+  z-index: 1;
+  font-weight: 600;
+  letter-spacing: 1;
+}
+
+.btn-box a:hover {
+  color: var(--light_blue);
+  background: var(--dark_blue);
+  transition: 0.5s;
+}
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: var(--light_blue);
+}
+
+.btn-box a:nth-child(2):hover {
+  color: var(--dark_blue);
+  background: var(--light_blue);
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .row {
+    max-width: 350px;
+  }
+}
+
+h4 {
+  min-height: 90px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--dark_blue);
+  z-index: 2;
+  position: relative;
+}
+
+@media only screen and (max-width: 979px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  h4 {
+    min-height: 72px;
+    font-size: 24px;
+  }
+
+  .link {
+    padding: 22px 40px;
+  }
+}
+
+.row h3 {
+  font-size: 23px;
+  color: var(--light_blue);
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.home-detail p {
+  font-size: 16px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/*PORTOFLIO pages - specifics*/
+.magazines-specific {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.shape-magazines {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px var(--white),
+    inset 20px 0 80px var(--light_blue),
+    inset -20px 0 80px var(--light_blue),
+    inset 20px 0 300px var(--light_blue),
+    inset -20px 0 300px var(--light_blue),
+    0 0 50px var(--white),
+    -10px 0 80px var(--light_blue),
+    10px 0 80px var(--light_blue);
+}
+
+.shape-magazines p {
+  text-align: center;
+  padding-top: 34px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Dancing Script';
+}
+
+/*Bottom - footer, social media, logo*/
+.footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+
+.social-media {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  left: 10%;
+  align-items: center;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--light_blue);
+  border-radius: 50%;
+  background: transparent;
+  text-decoration: none;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  color: var(--light_blue);
+  transition: .5s;
+  position: relative;
+}
+
+.social-media a:hover {
+  color: var(--dark_blue);
+  background: var(--light_blue);
+}
+
+.hz_logo {
+  width: 150px;
+  position: absolute;
+  right: 10%;
+  bottom: 55%;
+}

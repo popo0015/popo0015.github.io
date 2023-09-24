@@ -1,0 +1,52 @@
+details {
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+  
+  summary {
+    font-weight: bold;
+    padding: 1em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--white);
+  }
+  
+  summary:after {
+    content: "\002B";
+  }
+  
+  details ol {
+    margin-left: 5%;
+  }
+  
+  details[open] summary:after {
+    content: "\00D7";
+  }
+  
+  details[open] div {
+    padding: .5em 1em;
+    color: var(--white);
+  }
+  
+  details div a {
+    text-decoration: none;
+    color: var(--light_blue);
+  }
+  
+  .image-faq {
+    position: absolute;
+    display: flex;
+    height: 650px;
+    right: 0;
+    top: 13%;
+    padding: 50px 10% 0;
+    filter: drop-shadow(20px 20px 10px var(--dark_blue));
+  }
+  
+  @media (max-width: 1300px) {
+    .image-faq {
+      position: relative;
+      height: 550px;
+    }
+  }

@@ -1,0 +1,169 @@
+.tables-main {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  @media (max-width: 600px) and (orientation: portrait) {
+    .tables-main {
+      margin-top: 35%;
+    }
+  }
+
+  /*DASHBOARD*/
+.dash_table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 584px;
+    z-index: 2;
+  }
+  
+  .dash_table thead tr {
+    background-color: var(--light_blue);
+    color: var(--white);
+  }
+  
+  .dash_table th,
+  .dash_table td {
+    padding: 12px 12px;
+  }
+  
+  .dash_table tbody tr {
+    border-bottom: 0.1px solid var(--white);
+  }
+  
+  .dash_table tbody tr:last-of-type {
+    border-bottom: 4px solid var(--light_blue);
+  }
+  
+  @media (max-width: 700px) and (orientation: portrait) {
+    .dash_table {
+      font-size: 10px;
+      width: 70vw;
+      margin-left: -5%;
+    }
+  
+    .dash_table-right {
+      font-size: 9px;
+    }
+  
+    .table-extra-subjects {
+      right: 0%;
+      left: 0%;
+    }
+  }
+  
+  .head-row {
+    font-weight: bold;
+    color: var(--light_blue);
+    background-color: var(--white);
+  }
+  
+  .table-extra-subjects {
+    position: absolute;
+    top: 17%;
+    right: 7%;
+  }
+  
+  @media (max-width: 1400px) {
+    .tables-main {
+      flex-direction: column;
+    }
+  
+    .table-extra-subjects {
+      position: relative;
+    }
+  
+    .dash_table-right {
+      width: 50vw;
+      left: 10%;
+    }
+  }
+  
+  .disappear {
+    animation-name: fadeout;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  .show-p {
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      display: none;
+    }
+  
+    to {
+      opacity: 1;
+      display: block;
+    }
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 1.5em;
+    position: relative;
+    background-color: var(--white);
+  }
+  
+  .progressbar {
+    background: rgb(33, 182, 168);
+    background: linear-gradient(275deg, var(--light_blue) 0%, var(--dark_blue) 100%);
+    height: 100%;
+    position: absolute;
+    line-height: inherit;
+    transition: width ease-in-out 2s;
+  }
+  
+  .progress-bar-round {
+    border-radius: 16px;
+  }
+  
+  #NBSA {
+    margin-left: 50%;
+  }
+  
+  .submit-button {
+    top: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    border: 2px solid var(--light_blue);
+    border-radius: 50%;
+    background: transparent;
+    text-decoration: none;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    color: var(--light_blue);
+    transition: .5s;
+    position: relative;
+  }
+  
+  .submit-button:hover {
+    color: var(--dark_blue);
+    background: var(--light_blue);
+  }
