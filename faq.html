@@ -57,7 +57,7 @@
     </span>
   </header>
 
-  <!--FAQ question and answear-->
+  <!--FAQ question and answers-->
   <section class="home">
     <div class="home-detail">
       <h3>Frequently asked questions</h3>
@@ -137,17 +137,17 @@
 
   <!--Close all if one is open-->
   <script>
-    //Stack overflow => https://stackoverflow.com/questions/16751345/automatically-close-all-the-other-details-tags-after-opening-a-specific-detai
+    //Used => https://stackoverflow.com/questions/16751345/automatically-close-all-the-other-details-tags-after-opening-a-specific-detai
     const allDetails = document.querySelectorAll('details');
 
-    allDetails.forEach(deet => {
-      deet.addEventListener('toggle', toggleOpenOneOnly)
+    allDetails.forEach(closeAllButOne => {
+      closeAllButOne.addEventListener('toggle', toggleOpenOneOnly)
     })
 
     function toggleOpenOneOnly(e) {
       if (this.open) {
-        allDetails.forEach(deet => {
-          if (deet != this && deet.open) deet.open = false
+        allDetails.forEach(closeAllButOne => {
+          if (closeAllButOne != this && closeAllButOne.open) closeAllButOne.open = false
         });
       }
     }
